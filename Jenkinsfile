@@ -1,9 +1,9 @@
 node {
     checkout scm
 
-    def customImage = docker.build('ruby:2.5')
+    def customImage = docker.build('ruby')
 
     customImage.inside {
-        sh 'hello_world.rb'
+        sh 'ruby hello_world.rb'
     }
 }
