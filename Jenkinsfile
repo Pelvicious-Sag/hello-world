@@ -19,7 +19,7 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         app.inside {
-            sh 'ruby hello_world.rb"'
+            sh 'ruby hello_world.rb'
         }
     }
 }
